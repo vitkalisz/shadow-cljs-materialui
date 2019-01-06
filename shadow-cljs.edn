@@ -1,0 +1,26 @@
+
+{ 
+  :source-paths ["src"]
+
+  :dependencies 
+  [
+    [reagent "0.8.1"]]
+
+  :builds 
+  { :app 
+    {
+      :target     :browser
+      :output-dir "out/dev"
+      :asset-path "."
+      :modules  { :main {:init-fn app.main/main!}}
+
+      :devtools { :after-load app.main/reload!
+                  :http-root "out/dev"
+                  :http-port 8080}
+
+      :release { :output-dir "out/dist"
+                 ;; :module-hash-names 8
+                 :build-options {:manifest-name "assets.edn"}}}}}
+;
+
+;;.

@@ -1,0 +1,30 @@
+{
+  "name": "MUI_EXP",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "shadow-cljs watch app",
+    "compile": "shadow-cljs compile app",
+    "release": "shadow-cljs release app && cp assets/* out/dist/",
+    "html": "mkdir -p out/dev && cp assets/* out/dev/",
+    "serve": "yarn html && http-server out/dev/",
+    "clean": "rm -r out/dist/*",
+    "dev": "yarn html && yarn watch",
+    "repl": "shadow-cljs cljs-repl app",
+    "build": "yarn clean && yarn release"
+  },
+  "dependencies": {
+    "@material-ui/core": "3.8.1",
+    "@material-ui/icons": "3.0.1",
+    "react": "16.7.0",
+    "react-dom": "16.7.0"
+  },
+  "devDependencies": {
+    "http-server": "0.11.1",
+    "shadow-cljs": "2.7.10"
+  },
+  "author": "m@penzin.ru",
+  "license": "UNLICENSED",
+  "private": true
+}
