@@ -50,11 +50,12 @@
 /out/
 /tmp/
 /node_modules/
+/out/dev/cljs-runtime/
 
 # explicit versions in package.json
 /package-lock.json
 
-## allow 
+## allow
 !.gitignore
 !.dockerignore
 !.eslint*
