@@ -55,7 +55,7 @@
 
 
 (defn main-page []
-  [frame "content"])
+  [frame])
 ;
 
 

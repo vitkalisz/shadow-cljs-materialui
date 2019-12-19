@@ -15,10 +15,11 @@
     "build": "yarn clean && yarn release"
   },
   "dependencies": {
-    "@material-ui/core": "3.8.1",
-    "@material-ui/icons": "3.0.1",
-    "react": "16.7.0",
-    "react-dom": "16.7.0"
+    "@material-ui/core": "4.8.0",
+    "@material-ui/icons": "4.5.1",
+    "create-react-class": "^15.6.3",
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
   },
   "devDependencies": {
     "http-server": "0.11.1",
