@@ -50,7 +50,6 @@
 /out/
 /tmp/
 /node_modules/
-/out/dev/cljs-runtime/
 
 # explicit versions in package.json
 /package-lock.json
@@ -62,3 +61,5 @@
 !.npmingore
 
 #.
+/out/dev/cljs-runtime/
+/out/dev/cljs-runtime/*
